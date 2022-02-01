@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../dist/style.css" />
+
+    <title>Frontend Mentor | [Blogr]</title>
+  </head>
+  <body class="font-['Overpass'] overflow-x-hidden">
+    <nav
+      id="mobile-nav"
+      role="navigation"
+      class="px-6 pt-6 pb-8 w-[86.4vw] h-auto text-center bg-white border border-solid border-[#4C5862]/5 rounded-[5px] gap-6 fixed top-[33.33vw] left-[6.4vw] hidden z-10 xl:hidden"
+    >
+      <ul class="mb-6 flex flex-col justify-center items-center gap-6">
+        <li class="nav-item flex flex-col gap-6 cursor-pointer">
+          <div class="flex justify-center items-center gap-2">
+            <p class="font-semibold text-lg tracking-normal text-[#1F3E5A]">
+              Product
+            </p>
+            <img
+              class="nav-arrow transition-transform duration-300 ease-in"
+              src="../images/icon-arrow-dark.svg"
+              alt=""
+            />
+          </div>
+          <ul
+            class="nav-list pt-[1.063rem] pb-[1.563rem] hidden flex-col justify-center items-center gap-3 w-[73.6vw] h-auto bg-[#2D2E40]/[0.08] rounded-[5px]"
+          >
+            <li>
+              <a
+                class="font-semibold text-base leading-[1.75rem] tracking-normal text-[#1F3E5A]/75"
+                href="#"
+                >Overview</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-semibold text-base leading-[1.75rem] tracking-normal text-[#1F3E5A]/75"
+                href="#"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-semibold text-base leading-[1.75rem] tracking-normal text-[#1F3E5A]/75"
+                href="#"
+                >Marketplace</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-semibold text-base leading-[1.75rem] tracking-normal text-[#1F3E5A]/75"
+                href="#"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-semibold text-base leading-[1.75rem] tracking-normal text-[#1F3E5A]/75"
+                href="#"
+                >Integrations</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item flex flex-col gap-6 cursor-pointer">
+          <div class="flex justify-center items-center gap-2">
+            <p class="font-semibold text-lg tracking-normal text-[#1F3E5A]">
+              Company
+            </p>
+            <img
+              class="nav-arrow transition-transform duration-300 ease-in"
+              src="../images/icon-arrow-dark.svg"
+              alt=""
+            />
+          </div>
+          <ul
+            class="nav-list pt-[1.063rem] pb-[1.563rem] hidden flex-col justify-center items-center gap-3 w-[73.6vw] h-auto bg-[#2D2E40]/[0.08] rounded-[5px]"
+          >
+            <li>
+              <a
+                class="font-semibold text-base leading-[1.75rem] tracking-normal text-[#1F3E5A]/75"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-semibold text-base leading-[1.75rem] tracking-normal text-[#1F3E5A]/75"
+                href="#"
+                >Team</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-semibold text-base leading-[1.75rem] tracking-normal text-[#1F3E5A]/75"
+                href="#"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-semibold text-base leading-[1.75rem] tracking-normal text-[#1F3E5A]/75"
+                href="#"
+                >Careers</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item flex flex-col gap-6 cursor-pointer">
+          <div class="flex justify-center items-center gap-2">
+            <p class="font-semibold text-lg tracking-normal text-[#1F3E5A]">
+              Connect
+            </p>
+            <img
+              class="nav-arrow transition-transform duration-300 ease-in"
+              src="../images/icon-arrow-dark.svg"
+              alt=""
+            />
+          </div>
+          <ul
+            class="nav-list pt-[1.063rem] pb-[1.563rem] hidden flex-col justify-center items-center gap-3 w-[73.6vw] h-auto bg-[#2D2E40]/[0.08] rounded-[5px]"
+          >
+            <li>
+              <a
+                class="font-semibold text-base leading-[1.75rem] tracking-normal text-[#1F3E5A]/75"
+                href="#"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-semibold text-base leading-[1.75rem] tracking-normal text-[#1F3E5A]/75"
+                href="#"
+                >Newsletter</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-semibold text-base leading-[1.75rem] tracking-normal text-[#1F3E5A]/75"
+                href="#"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div
+        class="px-[4.438rem] pt-[1.563rem] flex flex-col items-center justify-start text-center gap-6 border-t border-solid border-[#E8E4E4]"
+      >
+        <a
+          class="font-['Overpass'] font-semibold text-lg tracking-0 text-[#1F3E5A]"
+          href="#"
+          >Login</a
+        >
+        <a
+          class="w-[137px] h-[48px] flex justify-center items-center bg-gradient-to-br from-[#FF8F71] to-[#FF3E55] rounded-[28px] font-bold text-base leading-[1.125rem] tracking-normal text-white"
+          href="#"
+          >Sign Up</a
+        >
+      </div>
+    </nav>
+    <header
+      class="mb-[6.125rem] px-[6.4vw] pt-[12.25rem] w-full h-[37.5rem] flex flex-col gap-[6.75rem] bg-gradient-to-br from-[#FF8F71] to-[#FF3E55] rounded-bl-[6.25rem] relative overflow-hidden z-[2] xl:mb-[9.375rem] xl:px-[11.59vw] xl:pt-[4.09vw] xl:gap-[7.688rem]"
+    >
+      <div
+        id="bg-pattern-mobile"
+        class="w-[189.37vw] h-[190.66] absolute top-[16vw] left-[-7.73vw] rotate-[22deg] z-[-1] xl:hidden"
+      >
+        <img src="../images/bg-pattern-intro-mobile.svg" alt="" />
+      </div>
+      <div
+        class="w-[118.40vw] h-[119.16vw] absolute left-[20.55vw] top-[-42.56vw] rotate-[22deg] hidden xl:block z-[-1]"
+      >
+        <img src="../images/bg-pattern-intro-desktop.svg" alt="" />
+      </div>
+      <div
+        id="mobile-navbar"
+        class="px-[6.4vw] py-[3.5rem] flex justify-between items-center w-full fixed left-0 top-0 transition-[background,_padding] duration-300 ease-in z-10 xl:hidden"
+      >
+        <a href="#" class="w-[5.125rem] h-[2rem]">
+          <img src="../images/logo.svg" alt="blogr logo" />
+        </a>
+        <button id="nav-btn" aria-label="menu button">
+          <img src="../images/icon-hamburger.svg" alt="" />
+        </button>
+      </div>
+      <div
+        id="desktop-navbar"
+        class="hidden xl:flex justify-between items-center"
+      >
+        <div class="flex items-center gap-16">
+          <a href="#" class="w-[101px] h-[40px]">
+            <img src="../images/logo.svg" alt="" />
+          </a>
+          <ul class="flex items-center gap-8">
+            <li
+              class="nav-item-desktop flex justify-center items-center gap-2 cursor-pointer relative"
+            >
+              <div class="flex justify-center items-center gap-2">
+                <p class="font-semibold text-lg tracking-normal text-white/75">
+                  Product
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    stroke-width="2"
+                    opacity=".75"
+                    d="M1 1l4 4 4-4"
+                  />
+                </svg>
+              </div>
+              <ul
+                class="desktop-submenu p-6 w-[10.5rem] h-auto hidden flex-col items-start justify-center bg-white rounded-[5px] absolute top-[3.40vw] left-[-1.66vw] drop-shadow-[0_20px_40px_rgba(0,0,0,0.2434)]"
+              >
+                <li>
+                  <a
+                    class="font-['Ubuntu'] font-normal text-[0.938rem] leading-[2.063rem] tracking-normal active:font-bold"
+                    href="#"
+                    >Overview</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-['Ubuntu'] font-normal text-[0.938rem] leading-[2.063rem] tracking-normal active:font-bold"
+                    href="#"
+                    >Pricing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-['Ubuntu'] font-normal text-[0.938rem] leading-[2.063rem] tracking-normal active:font-bold"
+                    href="#"
+                    >Marketplace</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-['Ubuntu'] font-normal text-[0.938rem] leading-[2.063rem] tracking-normal active:font-bold"
+                    href="#"
+                    >Features</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-['Ubuntu'] font-normal text-[0.938rem] leading-[2.063rem] tracking-normal active:font-bold"
+                    href="#"
+                    >Integrations</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li
+              class="nav-item-desktop flex justify-center items-center gap-2 cursor-pointer relative"
+            >
+              <div class="flex justify-center items-center gap-2">
+                <p class="font-semibold text-lg tracking-normal text-white/75">
+                  Company
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    stroke-width="2"
+                    opacity=".75"
+                    d="M1 1l4 4 4-4"
+                  />
+                </svg>
+              </div>
+              <ul
+                class="desktop-submenu p-6 w-[10.5rem] h-auto flex-col items-start justify-center bg-white rounded-[5px] absolute top-[3.40vw] left-[-1.66vw] drop-shadow-[0_20px_40px_rgba(0,0,0,0.2434)] hidden"
+              >
+                <li>
+                  <a
+                    class="font-['Ubuntu'] font-normal text-[0.938rem] leading-[2.063rem] tracking-normal active:font-bold"
+                    href="#"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-['Ubuntu'] font-normal text-[0.938rem] leading-[2.063rem] tracking-normal active:font-bold"
+                    href="#"
+                    >Team</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-['Ubuntu'] font-normal text-[0.938rem] leading-[2.063rem] tracking-normal active:font-bold"
+                    href="#"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-['Ubuntu'] font-normal text-[0.938rem] leading-[2.063rem] tracking-normal active:font-bold"
+                    href="#"
+                    >Careers</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li
+              class="nav-item-desktop flex justify-center items-center gap-2 cursor-pointer relative"
+            >
+              <div class="flex justify-center items-center gap-2">
+                <p class="font-semibold text-lg tracking-normal text-white/75">
+                  Connect
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    stroke-width="2"
+                    opacity=".75"
+                    d="M1 1l4 4 4-4"
+                  />
+                </svg>
+              </div>
+              <ul
+                class="desktop-submenu p-6 w-[10.5rem] h-auto flex-col items-start justify-center bg-white rounded-[5px] absolute top-[3.40vw] left-[-1.66vw] drop-shadow-[0_20px_40px_rgba(0,0,0,0.2434)] hidden"
+              >
+                <li>
+                  <a
+                    class="font-['Ubuntu'] font-normal text-[0.938rem] leading-[2.063rem] tracking-normal active:font-bold"
+                    href="#"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-['Ubuntu'] font-normal text-[0.938rem] leading-[2.063rem] tracking-normal active:font-bold"
+                    href="#"
+                    >Newsletter</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-['Ubuntu'] font-normal text-[0.938rem] leading-[2.063rem] tracking-normal active:font-bold"
+                    href="#"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="flex justify-center items-center gap-8">
+          <a
+            class="font-['Ubuntu'] font-bold text-base leading-[1.125rem] tracking-0 text-white/75 active:text-white"
+            href="#"
+            >Login</a
+          >
+          <a
+            class="w-[137px] h-[48px] flex justify-center items-center bg-white rounded-[28px] font-bold text-base leading-[1.125rem] tracking-normal text-[#FF505C] active:bg-[#FF7B86] active:text-white"
+            href="#"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+      <div class="flex flex-col gap-12">
+        <div
+          class="flex flex-col items-center text-center justify-start gap-[0.875rem] xl:gap-4"
+        >
+          <h1
+            class="font-semibold text-4xl leading-[2.875rem] tracking-[-1.08px] text-white xl:text-[4rem] xl:leading-[5.063rem] xl:tracking-[-1.92px]"
+          >
+            A modern <br class="xl:hidden" />
+            publishing platform
+          </h1>
+          <p
+            class="font-light text-lg leading-[1.438rem] tracking-normal text-white xl:text-xl xl:leading-[1.563rem]"
+          >
+            Grow your audience and build your <br class="xl:hidden" />
+            online brand
+          </p>
+        </div>
+        <div class="flex justify-center items-start gap-4">
+          <a
+            class="px-[1.063rem] py-[0.938rem] font-['Ubuntu'] font-bold text-base leading-[1.125rem] tracking-normal text-[#FF505C] bg-white rounded-[28px] active:bg-[#FF7B86] active:text-white"
+            href="#"
+            aria-label="Start for Free"
+          >
+            Start for Free
+          </a>
+          <a
+            class="px-[2.5rem] py-[0.938rem] flex items-center justify-center text-center font-['Ubuntu'] font-bold text-base leading-[1.125rem] tracking-normal text-white bg-transparent rounded-[28px] border border-solid border-white active:bg-white active:text-[#FF7B86]"
+            href="#"
+            aria-label="Learn More"
+          >
+            <p>Learn More</p>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="mb-[6.25rem]">
+      <div
+        class="mx-[6.4vw] mb-[72.8vw] flex flex-col items-center text-center gap-[9.625rem] xl:mx-0 xl:ml-[11.45vw] xl:mb-[18.19vw] xl:w-[107.63vw] xl:items-start xl:gap-[5.813rem] xl:relative"
+      >
+        <div
+          class="absolute left-[46.52vw] top-[-5.48vw] z-[-1] hidden xl:block"
+        >
+          <img src="../images/illustration-editor-circles-desktop.svg" alt="" />
+        </div>
+        <h2
+          class="font-semibold text-[1.75rem] leading-[2.188rem] tracking-[-0.84px] text-[#1F3E5A] xl:ml-[24.58vw] xl:text-[2.5rem] xl:leading-[3.188rem] xl:tracking-[-1.2px]"
+        >
+          Designed for the future
+        </h2>
+        <div
+          class="flex flex-col items-center gap-[2.875rem] xl:flex-row-reverse xl:justify-center xl:gap-[7.813rem]"
+        >
+          <div>
+            <img
+              class="xl:hidden"
+              src="../images/illustration-editor-mobile.svg"
+              alt="editor illustration"
+            />
+            <img
+              class="hidden xl:block"
+              src="../images/illustration-editor-desktop.svg"
+              alt="editor illustration"
+            />
+          </div>
+          <div
+            class="flex flex-col items-center gap-10 xl:w-[37.5vw] xl:h-[30.83vw]"
+          >
+            <div
+              class="flex flex-col items-center text-center gap-4 xl:text-left xl:items-start"
+            >
+              <h2
+                class="font-semibold text-[1.75rem] leading-[2rem] tracking-[-0.84px] text-[#1F3E5A] xl:leading-[1.75rem]"
+              >
+                Introducing an <br class="xl:hidden" />
+                extensible editor
+              </h2>
+              <p
+                class="w-[84.8vw] font-light text-base leading-[1.75rem] tracking-[0.5px] text-[#4C5862] xl:w-full"
+              >
+                Blogr features an exceedingly intuitive interface which lets you
+                focus on one thing: creating content. The editor supports
+                management of multiple blogs and allows easy manipulation of
+                embeds such as images, videos, and Markdown. Extensibility with
+                plugins and themes provide easy ways to add functionality or
+                change the looks of a blog.
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center text-center gap-4 xl:text-left xl:items-start"
+            >
+              <h2
+                class="font-semibold text-[1.75rem] leading-[2rem] tracking-[-0.84px] text-[#1F3E5A]"
+              >
+                Robust content management
+              </h2>
+              <p
+                class="w-[84.8vw] font-light text-base leading-[1.75rem] tracking-[0.5px] text-[#4C5862] xl:w-full"
+              >
+                Flexible content management enables users to easily move through
+                posts. Increase the usability of your blog by adding customized
+                categories, sections, format, or flow. With this functionality,
+                you’re in full control.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="mb-[4.938rem] px-[6.4vw] pt-[58.93vw] flex flex-col items-center text-center w-full h-[39.063rem] bg-[url('../images/bg-pattern-circles.svg')] bg-cover bg-no-repeat rounded-tr-[100px] rounded-bl-[100px] relative z-1 xl:px-0 xl:p-0 xl:mb-[18.813rem] xl:h-[25rem] xl:items-start xl:bg-[url('../images/bg-pattern-circles-desktop.svg')]"
+      >
+        <div
+          class="absolute w-[87.24vw] h-[92.4vw] left-[6.43vw] top-[-46.01vw] z-[0] xl:w-[32.77vw] xl:h-[34.65vw] xl:left-[11.45vw] xl:top-[-3.40vw]"
+        >
+          <img
+            class="w-[87.24vw] h-[92.4vw] xl:w-[32.77vw] xl:h-[34.65vw]"
+            src="../images/illustration-phones.svg"
+            alt=""
+          />
+        </div>
+        <div
+          class="flex flex-col gap-[1.875rem] xl:ml-[51.04vw] xl:mt-[7.70vw] xl:w-[37.5vw] xl:text-left"
+        >
+          <h2
+            class="font-semibold text-[2.5rem] leading-[3.188rem] tracking-[-1.2px] text-white"
+          >
+            State of the Art Infrastructure
+          </h2>
+          <p
+            class="font-light text-base leading-[1.75rem] tracking-[0.5px] text-white"
+          >
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping your
+            site competitive.
+          </p>
+        </div>
+      </div>
+      <div
+        class="mx-[6.4vw] mb-0 flex flex-col items-center text-center gap-[2.875rem] xl:mx-0 xl:ml-[-6.18vw] xl:mr-[11.45vw] xl:mb-[19.25rem] xl:w-[94.72vw] xl:h-[28.88vw] xl:flex-row xl:gap-[8.68vw] xl:relative"
+      >
+        <div
+          class="absolute left-[-20.55vw] top-[-15.84vw] z-[-1] hidden xl:block"
+        >
+          <img src="../images/illustration-editor-circles-desktop.svg" alt="" />
+        </div>
+        <div>
+          <img
+            class="xl:hidden"
+            src="../images/illustration-laptop-mobile.svg"
+            alt="laptop illustration"
+          />
+          <img
+            class="hidden xl:block"
+            src="../images/illustration-laptop-desktop.svg"
+            alt="laptop illustration"
+          />
+        </div>
+        <div class="flex flex-col items-center gap-10 xl:w-[37.5vw] xl:gap-16">
+          <div
+            class="flex flex-col items-center text-center gap-4 xl:text-left xl:items-start"
+          >
+            <h2
+              class="font-semibold text-[1.75rem] leading-[2rem] tracking-[-0.84px] text-[#1F3E5A]"
+            >
+              Free, open, simple
+            </h2>
+            <p
+              class="w-[84.8vw] font-light text-base leading-[1.75rem] tracking-[0.5px] text-[#4C5862] xl:w-full"
+            >
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration,
+              <br class="xl:hidden" />
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to
+              learn.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center text-center gap-4 xl:text-left xl:items-start"
+          >
+            <h2
+              class="font-semibold text-[1.75rem] leading-[2rem] tracking-[-0.84px] text-[#1F3E5A]"
+            >
+              Powerful tooling
+            </h2>
+            <p
+              class="w-[84.8vw] font-light text-base leading-[1.75rem] tracking-[0.5px] text-[#4C5862] xl:w-full"
+            >
+              Batteries included. We built a simple and straightforward CLI tool
+              that makes customization and deployment a breeze, but capable of
+              producing even the most complicated sites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="px-[6.4vw] py-[4.688rem] flex flex-col items-center gap-[4.563rem] w-full h-[56.25rem] bg-[#24242C] rounded-tr-[100px] xl:px-[11.45vw] xl:py-[4.86vw] xl:h-[22.438rem] xl:flex-row xl:items-start xl:gap-[11.5rem]"
+    >
+      <div class="w-[6.289rem] h-[2.464rem]">
+        <img
+          class="w-[6.289rem] h-[2.464rem]"
+          src="../images/logo.svg"
+          alt="blogr logo"
+        />
+      </div>
+      <div
+        class="flex flex-col items-center text-center gap-10 xl:flex-row xl:items-start xl:justify-start xl:gap-[1.875rem]"
+      >
+        <div
+          class="flex flex-col items-center text-center gap-[1.313rem] xl:justify-start xl:items-start xl:text-left xl:w-[17.70vw]"
+        >
+          <h3
+            class="font-['Ubuntu'] font-medium text-lg leading-[2.063rem] tracking-normal text-white"
+          >
+            Product
+          </h3>
+          <ul>
+            <li>
+              <a
+                class="font-['Ubuntu'] font-normal text-lg leading-[2.063rem] tracking-normal text-white/75 active:underline"
+                href="#"
+                >Overview</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-['Ubuntu'] font-normal text-lg leading-[2.063rem] tracking-normal text-white/75 active:underline"
+                href="#"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-['Ubuntu'] font-normal text-lg leading-[2.063rem] tracking-normal text-white/75 active:underline"
+                href="#"
+                >Marketplace</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-['Ubuntu'] font-normal text-lg leading-[2.063rem] tracking-normal text-white/75 active:underline"
+                href="#"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-['Ubuntu'] font-normal text-lg leading-[2.063rem] tracking-normal text-white/75 active:underline"
+                href="#"
+                >Integrations</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          class="flex flex-col items-center text-center gap-[1.313rem] xl:justify-start xl:items-start xl:text-left xl:w-[17.70vw]"
+        >
+          <h3
+            class="font-['Ubuntu'] font-medium text-lg leading-[2.063rem] tracking-normal text-white"
+          >
+            Company
+          </h3>
+          <ul>
+            <li>
+              <a
+                class="font-['Ubuntu'] font-normal text-lg leading-[2.063rem] tracking-normal text-white/75 active:underline"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-['Ubuntu'] font-normal text-lg leading-[2.063rem] tracking-normal text-white/75 active:underline"
+                href="#"
+                >Team</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-['Ubuntu'] font-normal text-lg leading-[2.063rem] tracking-normal text-white/75 active:underline"
+                href="#"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-['Ubuntu'] font-normal text-lg leading-[2.063rem] tracking-normal text-white/75 active:underline"
+                href="#"
+                >Careers</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          class="flex flex-col items-center text-center gap-[1.313rem] xl:justify-start xl:items-start xl:text-left xl:w-[17.70vw]"
+        >
+          <h3
+            class="font-['Ubuntu'] font-medium text-lg leading-[2.063rem] tracking-normal text-white"
+          >
+            Connect
+          </h3>
+          <ul>
+            <li>
+              <a
+                class="font-['Ubuntu'] font-normal text-lg leading-[2.063rem] tracking-normal text-white/75 active:underline"
+                href="#"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-['Ubuntu'] font-normal text-lg leading-[2.063rem] tracking-normal text-white/75 active:underline"
+                href="#"
+                >Newsletter</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-['Ubuntu'] font-normal text-lg leading-[2.063rem] tracking-normal text-white/75 active:underline"
+                href="#"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
